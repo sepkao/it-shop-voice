@@ -33,7 +33,7 @@ export default function Home() {
 
     rec.onstart = () => {
       setIsListening(true);
-      setStatus("กำลังฟัง... พูดคำถามได้เลยครับ");
+      setStatus("กำลังฟัง... พูดคำถามได้เลยครับผม");
     };
 
     rec.onend = () => {
