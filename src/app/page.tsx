@@ -11,7 +11,7 @@ type ApiResult = {
 
 export default function Home() {
   const [isListening, setIsListening] = useState(false);
-  const [status, setStatus] = useState("พร้อมพูด");
+  const [status, setStatus] = useState("พร้อมพูดแล้ว");
   const [result, setResult] = useState<ApiResult>({});
 
   const recognitionRef = useRef<any>(null);
@@ -33,7 +33,7 @@ export default function Home() {
 
     rec.onstart = () => {
       setIsListening(true);
-      setStatus("กำลังฟัง... พูดคำถามได้เลย");
+      setStatus("กำลังฟัง... พูดคำถามได้เลยครับ");
     };
 
     rec.onend = () => {
